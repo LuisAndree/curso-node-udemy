@@ -1,0 +1,22 @@
+
+<%- include('includes/head') %>
+    <h1>
+        <!-- <%# ver doc do EJS https://ejs.co/ %>
+        <%= titulo %><br> 
+        <%- titulo %> -->
+         <!-- %= nao interpreta html  -->
+         <!-- %- interpreta html -->
+
+         <% numeros.forEach(num => { %>
+            <%= num %><br>
+            <%- titulo %>
+        <% }) %>
+
+    </h1>
+    
+    <form action="/" method="post">
+        <label for="cliente">CLiente:</label>
+        <input type="text" name="cliente">
+        <button>Submit</button>
+    </form>
+<%- include('includes/footer') %>
